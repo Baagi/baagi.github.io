@@ -18,7 +18,7 @@ a {
 
 .container{
   overflow-y: scroll;
-  scroll-snap-type: y proximity;
+  scroll-snap-type: y mandatory;
   overflow-x: hidden;
   height: 100vh;
 }

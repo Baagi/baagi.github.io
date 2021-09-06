@@ -22,7 +22,7 @@ export default function Home() {
           <Center bg="black" maxHeight="2160px" h="100vh" color="white">
             <Stack spacing={1}>
               <Heading as="h1" size="xl">
-                Hi, I&apos; m Bat!<br></br>
+                Hi, I&apos;m Bat!<br></br>
                 Software Developer
               </Heading>
 
@@ -49,8 +49,8 @@ export default function Home() {
               </Heading>
 
               <Text as="h1" size="xl">
-                I&apos; m currently a 4th year Software Engineering student at Cal Poly, San Luis Obispo.
-                <br></br> I&apos; m also a Software QA apprentice at an awesome right-to-repair company called iFixit.
+                I&apos;m currently a 4th year Software Engineering student at Cal Poly, San Luis Obispo.
+                <br></br> I&apos;m also a Software QA apprentice at an awesome right-to-repair company called iFixit.
                 <br></br>
                 I love writing code and building new things.
               </Text>
@@ -172,20 +172,21 @@ export default function Home() {
           {/* "linear-gradient(170deg, #00DA9E, #319795)" */}
           <Center bg="linear-gradient(150deg, #E4CD82, #FD61C7)" maxHeight="2160px" h="100vh" w="100vw" id="projects" color="white">
 
-            <Heading as="h1" size="xl">
-              Projects
-            </Heading>
+            <Stack>
+              <Heading as="h1" size="xl">
+                Projects
+              </Heading>
 
-            <Heading as="h1" size="xl">
-              Project Name
-              <br></br>
-              Project Description
-              <br></br>
-              More info / View Project
-              <br></br>
-              Tech stack:
-            </Heading>
-
+              <Heading as="h1" size="xl">
+                Project Name
+                <br></br>
+                Project Description
+                <br></br>
+                More info / View Project
+                <br></br>
+                Tech stack:
+              </Heading>
+            </Stack>
           </Center>
         </div>
 
@@ -195,11 +196,11 @@ export default function Home() {
 
             <Center maxHeight="2160px" h="95vh" color="white" id="contact">
               <Stack>
-                <Heading as="h1" size="xl">
+                <Heading as="h1" size="2xl">
                   Get In Touch
                 </Heading>
 
-                <HStack spacing={2} justifyContent="center">
+                <HStack spacing={2} justifyContent="center" fontSize="xl">
                   <Link href="mailto:webmaster@example.com" isExternal> Email </Link>
                   <Link href="https://www.linkedin.com/in/bat-battur-a9b1b8217" isExternal> LinkedIn </Link>
                   <Link href="https://github.com/Baagi" isExternal> Github </Link>
