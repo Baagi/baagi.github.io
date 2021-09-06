@@ -1,7 +1,6 @@
 import Navbar from '../components/navbar'
 import Footer from '../components/footer'
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { Box, Button, Center, Heading, HStack, Link, Stack, Text, Wrap, WrapItem } from '@chakra-ui/react'
 
