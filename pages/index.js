@@ -1,6 +1,9 @@
+import Navbar from '../components/navbar'
+import Footer from '../components/footer'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { Box, Button, Center, Heading, HStack, Link, Stack, Text, Wrap, WrapItem } from '@chakra-ui/react'
 
 export default function Home() {
   return (
@@ -11,148 +14,203 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* MAIN LANDING PAGE SECTION */}
-
-
-      <h1>
-          Hi, I&apos;m Bat!
-      </h1>
-      <h1>Software Developer</h1>
-
-      <a>
-        Github
-      </a>
-      <a>
-        Linkedin
-      </a>
-      <a>
-        Email
-      </a>
-      <a>
-        Download Resume 
-      </a>
 
       <main>
-        <h1 >
-          Welcome to my site!
-        </h1>
+        {/* MAIN LANDING PAGE SECTION */}
+        <div className="section" id="top">
+          <Navbar />
+          <Center bg="black" maxHeight="2160px" h="100vh" color="white">
+            <Stack spacing={1}>
+              <Heading as="h1" size="xl">
+                Hi, I&apos; m Bat!<br></br>
+                Software Developer
+              </Heading>
+
+              <HStack spacing={2}>
+                <Link href="https://github.com/Baagi" isExternal> Github </Link>
+                <Link href="https://www.linkedin.com/in/bat-battur-a9b1b8217" isExternal> LinkedIn </Link>
+                <Link href="mailto:webmaster@example.com" isExternal> Email</Link>
+                <Button colorScheme="transparent"> Download Resume</Button>
+              </HStack>
+
+              <Heading as="h1" size="4xl">
+                Welcome to my site!
+              </Heading>
+            </Stack>
+          </Center>
+        </div>
 
         {/* ABOUT ME SECTION */}
+        <div className="section">
+          <Center bg="linear-gradient(170deg, white, #F7F7F7)" maxHeight="2160px" h="100vh" w="100vw" color="black" id="about">
+            <Stack spacing={6}>
+              <Heading as="h1" size="2xl">
+                About Me
+              </Heading>
 
-        <h1 >
-          About Me
-        </h1>
+              <Text as="h1" size="xl">
+                I&apos; m currently a 4th year Software Engineering student at Cal Poly, San Luis Obispo.
+                <br></br> I&apos; m also a Software QA apprentice at an awesome right-to-repair company called iFixit.
+                <br></br>
+                I love writing code and building new things.
+              </Text>
 
-        <h1 >
-        I&apos;m currently a 4th year Software Engineering student at Cal Poly, San Luis Obispo. I&apos;m also a Software QA apprentice at an awesome right-to-repair company called iFixit.
-        </h1>
-
-        <h1 >
-        I love writing code and building new things. 
-        </h1>
-
-        <h1 >
-          Education
-        </h1>
-
-        <h1 >
-          California Polytechnic State University
-          <br></br> 
-          B.S. Software Engineering
-          <br></br>
-          San Luis Obispo, CA
-          <br></br>
-          Expected Graduation: June 2022
-        </h1>
-
-        <h1 >
-          Experience
-        </h1>
-
-        <h1 > 
-          Software QA 💼 iFixit
-          <br></br>
-          San Luis Obispo, CA
-          <br></br>
-          Nov 2020 - Present
-        </h1>
+              <HStack spacing={10}>
+                <Wrap >
+                  <WrapItem>
+                    <Stack>
+                      <Heading as="h1" size="xl">
+                        Education
+                      </Heading>
+                      <Text as="h1" size="xl">
+                        California Polytechnic State University
+                        <br></br>
+                        B.S.Software Engineering
+                        <br></br>
+                        San Luis Obispo, CA
+                        <br></br>
+                        Expected Graduation: June 2022
+                      </Text>
+                    </Stack>
+                  </WrapItem>
+                  <WrapItem>
+                    <Stack>
+                      <Heading as="h1" size="xl">
+                        Experience
+                      </Heading>
+                      <Text as="h1" size="xl">
+                        Software QA 💼 <Link to='https://www.ifixit.com/' isExternal >iFixit </Link>
+                        <br></br>
+                        San Luis Obispo, CA
+                        <br></br>
+                        Dec 2018 - Present
+                      </Text>
+                    </Stack>
+                  </WrapItem>
+                </Wrap >
+              </HStack>
+            </Stack>
+          </Center>
+        </div>
 
         {/* WEB DEV SECTION */}
+        <div className="section">
+          <Center bg="linear-gradient(170deg, #05C4EE, #2B6CB0)" maxHeight="2160px" h="100vh" w="100vw" color="white" id="development">
 
-        <h1 >
-          Development
-        </h1>
+            <Stack spacing={1}>
+              <Heading as="h1" size="2xl">
+                Development
+              </Heading>
 
-        <h1 > 
-          Services
-          <br></br>
-          Best solutions to your creative project.
-          <br></br>
-          Do you need a vibrant new website that runs smoothly? Then you found the right person.
-          <br></br>
-          Contact Me
-        </h1>
+              <HStack spacing={2} direction={["row", "column"]}>
+                <Wrap >
+                  <WrapItem>
+                    <Stack spacing={1}>
+                      <Text fontSize="2xl" fontWeight="bold">
+                        Services
+                      </Text>
+                      <Text>
+                        Best solutions to your creative project.
+                        <br></br>
+                        Do you need a vibrant new website that <br></br>
+                        runs smoothly?Then you found the right <br></br>
+                        person!
+                      </Text>
+                    </Stack>
+                  </WrapItem>
 
-        <h1 > 
-          Web Development
-          <br></br>
-          Project Management
-          <br></br>
-          UX/UI design
-          <br></br>
-          Quality Assurance
-        </h1>
+                  <WrapItem >
+                    <Stack spacing={4} margin="0 10px">
+                      <Text fontSize="xl">
+                        Web Development
+                      </Text>
+                      <Text fontSize="xl">
+                        UX/UI design
+                      </Text>
+                    </Stack>
 
-        <h1 >
-          Techonologies
-        </h1>
+                    <Stack spacing={4}>
+                      <Text fontSize="xl">
+                        Project Management
+                      </Text>
+                      <Text fontSize="xl">
+                        Quality Assurance
+                      </Text>
+                    </Stack>
+                  </WrapItem>
+                </Wrap>
+              </HStack>
+              <Text fontSize="2xl">
+                <Link href="#contact">Contact Me </Link>
+              </Text>
 
-        <h1 > 
-          Front-end
-          <br></br>
-          Backend
-          <br></br>
-          Database
-          <br></br>
-          Tools
-        </h1>
+              <Heading as="h1" size="2xl">
+                Techonologies
+              </Heading>
 
-      {/* PROJECTS SECTION */}
+              <HStack spacing={2}>
+                <Text fontSize="2xl">
+                  Front-end
+                </Text>
+                <Text fontSize="2xl">
+                  Backend
+                </Text>
+                <Text fontSize="2xl">
+                  Database
+                </Text>
+                <Text fontSize="2xl">
+                  Tools
+                </Text>
+              </HStack>
 
-        <h1 >
-          Projects
-        </h1>
+            </Stack>
+          </Center>
+        </div>
 
-        <h1 > 
-          Project Name
-          <br></br>
-          Project Description
-          <br></br>
-          More info / View Project
-          <br></br>
-          Tech stack: 
-        </h1>
+        {/* PROJECTS SECTION */}
+        <div className="section">
+          {/* "linear-gradient(170deg, #00DA9E, #319795)" */}
+          <Center bg="linear-gradient(150deg, #E4CD82, #FD61C7)" maxHeight="2160px" h="100vh" w="100vw" id="projects" color="white">
 
-      {/* GET IN TOUCH SECTION */}
+            <Heading as="h1" size="xl">
+              Projects
+            </Heading>
 
-        <h1 >
-          Get In Touch
-        </h1>
-        
-        <a>
-          Github
-        </a>
-      
-        <a>
-          Linkedin
-        </a>
+            <Heading as="h1" size="xl">
+              Project Name
+              <br></br>
+              Project Description
+              <br></br>
+              More info / View Project
+              <br></br>
+              Tech stack:
+            </Heading>
 
-        <a>
-          Email
-        </a>
+          </Center>
+        </div>
 
-      </main>
+        {/* GET IN TOUCH SECTION */}
+        <div className="section">
+          <Box bg="linear-gradient(240deg, #7C00E4, purple)" maxHeight="2160px" h="100vh" color="white" id="contact">
 
-    </div>
+            <Center maxHeight="2160px" h="95vh" color="white" id="contact">
+              <Stack>
+                <Heading as="h1" size="xl">
+                  Get In Touch
+                </Heading>
+
+                <HStack spacing={2} justifyContent="center">
+                  <Link href="mailto:webmaster@example.com" isExternal> Email </Link>
+                  <Link href="https://www.linkedin.com/in/bat-battur-a9b1b8217" isExternal> LinkedIn </Link>
+                  <Link href="https://github.com/Baagi" isExternal> Github </Link>
+                </HStack>
+              </Stack>
+            </Center>
+            <Footer justifyContent="center" />
+          </Box>
+        </div>
+      </main >
+
+    </div >
   )
 }
