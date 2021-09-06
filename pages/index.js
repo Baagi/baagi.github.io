@@ -196,7 +196,7 @@ export default function Home() {
             <Center maxHeight="2160px" h="95vh" color="white" id="contact">
               <Stack>
                 <Heading as="h1" size="2xl">
-                  Get In Touch
+                  Get In Touch, Testing
                 </Heading>
 
                 <HStack spacing={2} justifyContent="center" fontSize="xl">
