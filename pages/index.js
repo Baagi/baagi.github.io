@@ -206,7 +206,7 @@ export default function Home() {
                 </HStack>
               </Stack>
             </Center>
-            <Footer justifyContent="center" />
+            {/* <Footer justifyContent="center" /> */}
           </Box>
         </div>
       </main >
