@@ -1,0 +1,24 @@
+  {/* PROJECTS SECTION */}
+        {/* linear-gradient(170deg, #05C4EE, #2B6CB0) */}
+        <div className="section">
+          {/* "linear-gradient(170deg, #00DA9E, #319795)" */}
+          <Center bg="linear-gradient(150deg, darkgreen, lightgreen)" maxHeight="2160px" h="100vh" w="100vw" id="projects" color="white">
+
+            <Stack>
+              <Heading as="h1" size="xl">
+                Projects
+              </Heading>
+
+              <Heading as="h1" size="xl">
+                Project Name
+                <br></br>
+                Project Description
+                <br></br>
+                More info / View Project
+                <br></br>
+                Tech stack:
+              </Heading>
+            </Stack>
+          </Center>
+        </div>
+

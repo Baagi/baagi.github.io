@@ -1,7 +1,4 @@
-import Navbar from '../components/navbar'
-import Footer from '../components/footer'
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 import { Box, Button, Center, Heading, HStack, Link, Stack, Text, Wrap, WrapItem } from '@chakra-ui/react'
 
 export default function Home() {
@@ -17,7 +14,7 @@ export default function Home() {
       <main>
         {/* MAIN LANDING PAGE SECTION */}
         <div className="section" id="top">
-          <Navbar />
+          {/* <Navbar /> */}
           <Center bg="black" maxHeight="2160px" h="100vh" color="white">
             <Stack spacing={1}>
               <Heading as="h1" size="xl">
@@ -28,8 +25,9 @@ export default function Home() {
               <HStack spacing={2}>
                 <Link href="https://github.com/Baagi" isExternal> Github </Link>
                 <Link href="https://www.linkedin.com/in/bat-battur-a9b1b8217" isExternal> LinkedIn </Link>
-                <Link href="mailto:webmaster@example.com" isExternal> Email</Link>
-                <Button colorScheme="transparent"> Download Resume</Button>
+                <Link href="mailto:bbattur@calpoly.edu" isExternal> Email</Link>
+                <a href='/resume.pdf' download>Download Resume</a>
+
               </HStack>
 
               <Heading as="h1" size="4xl">
@@ -96,102 +94,58 @@ export default function Home() {
         <div className="section">
           <Center bg="linear-gradient(170deg, #05C4EE, #2B6CB0)" maxHeight="2160px" h="100vh" w="100vw" color="white" id="development">
 
-            <Stack spacing={1}>
+            <Stack spacing={3}>
               <Heading as="h1" size="2xl">
-                Development
-              </Heading>
-
-              <HStack spacing={2} direction={["row", "column"]}>
-                <Wrap >
-                  <WrapItem>
-                    <Stack spacing={1}>
-                      <Text fontSize="2xl" fontWeight="bold">
-                        Services
-                      </Text>
-                      <Text>
-                        Best solutions to your creative project.
-                        <br></br>
-                        Do you need a vibrant new website that <br></br>
-                        runs smoothly?Then you found the right <br></br>
-                        person!
-                      </Text>
-                    </Stack>
-                  </WrapItem>
-
-                  <WrapItem >
-                    <Stack spacing={4} margin="0 10px">
-                      <Text fontSize="xl">
-                        Web Development
-                      </Text>
-                      <Text fontSize="xl">
-                        UX/UI design
-                      </Text>
-                    </Stack>
-
-                    <Stack spacing={4}>
-                      <Text fontSize="xl">
-                        Project Management
-                      </Text>
-                      <Text fontSize="xl">
-                        Quality Assurance
-                      </Text>
-                    </Stack>
-                  </WrapItem>
-                </Wrap>
-              </HStack>
-              <Text fontSize="2xl">
-                <Link href="#contact">Contact Me </Link>
-              </Text>
-
-              <Heading as="h1" size="2xl">
-                Techonologies
-              </Heading>
-
-              <HStack spacing={2}>
-                <Text fontSize="2xl">
-                  Front-end
-                </Text>
-                <Text fontSize="2xl">
-                  Backend
-                </Text>
-                <Text fontSize="2xl">
-                  Database
-                </Text>
-                <Text fontSize="2xl">
-                  Tools
-                </Text>
-              </HStack>
-
-            </Stack>
-          </Center>
-        </div>
-
-        {/* PROJECTS SECTION */}
-        <div className="section">
-          {/* "linear-gradient(170deg, #00DA9E, #319795)" */}
-          <Center bg="linear-gradient(150deg, #E4CD82, #FD61C7)" maxHeight="2160px" h="100vh" w="100vw" id="projects" color="white">
-
-            <Stack>
-              <Heading as="h1" size="xl">
                 Projects
               </Heading>
 
+              <Stack spacing={3}>
+                <Text fontSize="xl">
+                  SLO Hikes, Web app for hikers: <Link href='https://slohikes.herokuapp.com/' isExternal color="darkblue">click here ↗ </Link>
+                </Text>
+                <Text fontSize="l">
+                  Web app developed for a group project for Software Engineering I and II classes.
+                  <br></br>
+                  Used MongoDB, Express, React, and NodeJS (MERN) stack to develop all of the features.
+                  <br></br>
+                  Applied all software development practices in the process.
+                </Text>
+              </Stack>
+
               <Heading as="h1" size="xl">
-                Project Name
-                <br></br>
-                Project Description
-                <br></br>
-                More info / View Project
-                <br></br>
-                Tech stack:
+                Skills/Technologies
               </Heading>
+
+              <Stack spacing={3}>
+                <Text fontSize="l">
+                  I have experience with the software development life cycle and the best deveplopment practices
+                  <br></br>
+                  like unit testing, functional testing, integration testing, CI/CD from work and class experience.<br></br>
+                </Text>
+              </Stack>
+
+              <Stack spacing={1}>
+                <Text fontSize="l">
+                  Programming languages: Java, Python, C, PHP.
+                  <br></br>
+                  Databases: MySQL, MongoDB.
+                  <br></br>
+                  Web development: ReactJS, NodeJS, ExpressJS, NextJS, Git/Github, Docker.
+                  <br></br>
+                  Other tools: Cypress, Travis CI, Heroku, Figma, Photoshop, WordPress.
+                </Text>
+
+              </Stack>
+
             </Stack>
           </Center>
         </div>
 
         {/* GET IN TOUCH SECTION */}
         <div className="section">
-          <Box bg="linear-gradient(240deg, #7C00E4, purple)" maxHeight="2160px" h="100vh" color="white" id="contact">
+          {/* linear-gradient(240deg, #7C00E4, purple) purple */}
+
+          <Box bg="linear-gradient(340deg, #7C00E4, pink)" maxHeight="2160px" h="100vh" color="white" id="contact">
 
             <Center maxHeight="2160px" h="95vh" color="white" id="contact">
               <Stack>
@@ -200,7 +154,7 @@ export default function Home() {
                 </Heading>
 
                 <HStack spacing={2} justifyContent="center" fontSize="xl">
-                  <Link href="mailto:webmaster@example.com" isExternal> Email </Link>
+                  <Link href="mailto:bbattur@calpoly.edu" isExternal> Email </Link>
                   <Link href="https://www.linkedin.com/in/bat-battur-a9b1b8217" isExternal> LinkedIn </Link>
                   <Link href="https://github.com/Baagi" isExternal> Github </Link>
                 </HStack>
