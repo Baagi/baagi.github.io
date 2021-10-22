@@ -47,9 +47,9 @@ export default function Home() {
 
               <Text as="h1" size="xl">
                 I&apos;m currently a 4th year Software Engineering student at Cal Poly, San Luis Obispo.
-                <br></br> I&apos;m also a Software QA apprentice at an awesome right-to-repair company called iFixit.
+                <br></br> I&apos;m also a Software QA apprentice at iFixit, extra cool repair company. 
                 <br></br>
-                I love writing code and building new things.
+                I love writing code and passionate for building new things.
               </Text>
 
               <HStack spacing={10}>
